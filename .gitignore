@@ -1,9 +1,6 @@
+node_modules
 package-lock.json
-node_modules/
-.vscode/
-*.rar
-*.zip
 .DS_Store
-Thumbs.db
-README.md
-.prettierrc
+dist
+dist-ssr
+*.local
