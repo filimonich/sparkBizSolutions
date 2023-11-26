@@ -1,15 +1,32 @@
 {
-  "name": "sparkBizSolutions",
+  "name": "sparkbizsolutions",
+  "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "bem": "bemtree-from-html"
   },
   "dependencies": {
-    "vue": "^3.0.4"
+    "normalize.css": "^8.0.1",
+    "vue": "^3.3.8"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "@vitejs/plugin-vue": "^4.5.0",
+    "autoprefixer": "^10.4.16",
+    "bemtree-from-html": "^1.0.11",
+    "include-media": "^2.0.0",
+    "sass": "^1.69.5",
+    "vite": "^5.0.0",
+    "vite-plugin-html-inject": "^1.0.4",
+    "vite-plugin-sass-glob-import": "^3.0.2"
+  },
+  "bemtree": {
+    "from": "./src/**/!(_%temp)*.html",
+    "to": "src/blocks",
+    "js": "src/js/blocks.js",
+    "omit": "js-"
   }
 }
