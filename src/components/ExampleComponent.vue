@@ -14,13 +14,20 @@
       @click="changeParagraphColor"
     ></ButtonClick>
   </div>
+
+  <div>
+    <h1>My App</h1>
+    <ClickableButton />
+  </div>
 </template>
 
 <script>
+import ClickableButton from "./ClickableButton.vue";
 import ButtonClick from "./ButtonClick.vue";
 
 export default {
   components: {
+    ClickableButton,
     // Импорт компонента ButtonClick из файла ButtonClick.vue
     ButtonClick,
   },
