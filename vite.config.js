@@ -13,8 +13,8 @@ export default defineConfig({
       },
     },
   ],
+  base: "./", // обновляем опцию base
   build: {
     outDir: resolve(__dirname, "docs"),
-    base: "./", // Установите base: './'
   },
 });
